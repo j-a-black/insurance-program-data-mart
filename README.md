@@ -52,7 +52,7 @@ The data pipeline follows a layered architecture:
 - **Cleaned Layer**: Converts source values into appropriate SQL Server data types, standardizes fields, validates relationships and business rules, and records validation issues in a centralized control table.
 - **Curated Layer**: Organizes validated data into conformed dimensions and fact tables for analytical reporting.
 
-![data architecture](./docs/data_architecture.png)
+![data architecture](./images/data_architecture.png)
 
 ## Dataset
 
@@ -176,9 +176,9 @@ These fact tables share conformed dimensions such as `DimPolicy`, `DimProgram`, 
 
 The high-level dimensional model illustrates how the two fact tables share common dimensions while supporting different grains and analytical use cases.
 
-![dimensional model](./docs/data_model_HighLevel.png)
+![dimensional model](./images/data_model_HighLevel.png)
 
-![data flow](./docs/data_flow.png)
+![data flow](./images/data_flow.png)
 
 ## Data Quality and Controls
 
